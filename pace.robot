@@ -3,6 +3,7 @@
 *** Settings ***
 
 Documentation           Test suite for CRT starter.
+Library    QForce
 Library                 QWeb
 Library       QImage
 Suite Setup             Open Browser    about:blank    chrome
