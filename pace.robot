@@ -36,11 +36,10 @@ Test the home page with reference picture in folder and mask
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
     GoTo               https://qentinelqi.github.io/shop/
     VerifyText         Find your spirit animal
-    ClickText          Our Story
-    # Taking a 2 full screen screenshots and comparing them
     ${second}=         LogScreenshot
-
+    ClickText          Our Story
     CompareImages      ${second}                   test.png       mask.png
+    
 Test the home page two different pages
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
     GoTo               https://qentinelqi.github.io/shop/
