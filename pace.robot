@@ -31,6 +31,7 @@ Test the home page with reference picture in folder
     ${second}=         LogScreenshot
 
     CompareImages      ${second}                   test.png
+    
 Test the home page with reference picture in folder and mask tolerance 1.0
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
     GoTo               https://qentinelqi.github.io/shop/
@@ -38,7 +39,7 @@ Test the home page with reference picture in folder and mask tolerance 1.0
     ${second}=         LogScreenshot
     ClickText          Our Story
     CompareImages      ${second}                   test.png       mask.png    tolerance=1
-    
+
 Test the home page with reference picture in folder and mask
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
     GoTo               https://qentinelqi.github.io/shop/
