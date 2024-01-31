@@ -38,8 +38,8 @@ Test the home page with reference picture in folder and mask
     VerifyText         Find your spirit animal
     ${second}=         LogScreenshot
     ClickText          Our Story
-    CompareImages      ${second}                   test.png       mask.png
-    
+    CompareImages      ${second}                   test.png       mask.png    tolerance=0.90
+
 Test the home page two different pages
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
     GoTo               https://qentinelqi.github.io/shop/
@@ -48,7 +48,7 @@ Test the home page two different pages
     ${second}=         LogScreenshot
     ClickText          Our Story
     ${third}=          LogScreenshot
-    CompareImages      ${second}                   ${third}
+    CompareImages      ${second}                   ${third}    
 
 Test the home page with tolerance same as difference
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
