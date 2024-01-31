@@ -21,6 +21,7 @@ Test the home page
     ${second}=         LogScreenshot
     ${third}=          LogScreenshot
     CompareImages      ${second}                   ${third}
+    
 
 Test the home page with reference picture in folder
     [Documentation]    Go to the web shop, and verify that the slogan text appears on the page.
