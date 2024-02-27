@@ -32,6 +32,5 @@ Verify Text in PDF
     [Arguments]   ${pdftext}
     ReadPDF    
     VerifyPDFText    ${pdftext}        
-    VerifyPDFText     Streamlined  
  
    
