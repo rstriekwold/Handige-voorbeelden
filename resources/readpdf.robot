@@ -28,7 +28,7 @@ Move to outputdir
 ReadPDF
     UsePdf    ${OUTPUT_DIR}/${pdf_file}
  
-VerifyPDFText
+Verify Text in PDF
     [Arguments]   ${pdftext}
     ReadPDF    
     VerifyPDFText    ${pdftext}        
