@@ -91,4 +91,5 @@ Test the home page with tolerance just above ratio
 Test pdf file
         Move to outputdir
         Verify Text in PDF    AUTHORIZATION APPROVED
+        ${alltextpdf}=        GetPdfText
         
