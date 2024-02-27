@@ -19,7 +19,7 @@ Move to outputdir
     @{downloads}=           List Files In Directory     ${downloads_folder}
     ${pdf_file}=            Get From List               ${downloads}                0
     Log To Console                     PDF Filename: ${pdf_file}
-    Set Suite Variable      ${pdf_file}
+    Set Suite Variable      ${pdf_file}                 ESTA.pdf
  
     #Moving file to Outpur dir so it will be attached to the run
     Move File               ${downloads_folder}/${pdf_file}                         ${OUTPUT_DIR}
