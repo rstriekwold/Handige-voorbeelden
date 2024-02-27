@@ -22,7 +22,7 @@ Move to outputdir
     Set Suite Variable      ${pdf_file}                 ESTA.pdf
  
     #Moving file to Outpur dir so it will be attached to the run
-    Move File               ${downloads_folder}/${pdf_file}                         ${OUTPUT_DIR}
+    Move File               ${CURDIR}/../${pdf_file}                         ${OUTPUT_DIR}
     Sleep                   2s
  
 ReadPDF
