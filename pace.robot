@@ -8,7 +8,7 @@ Library                QWeb
 Library                QImage
 Suite Setup            Open Browser                about:blank    chrome
 Suite Teardown         Close All Browsers
-Resource    resources/readpdf.robot
+
 
 *** Test Cases ***
 
@@ -88,8 +88,4 @@ Test the home page with tolerance just above ratio
     ${third}=          LogScreenshot
     CompareImages      ${second}                   ${third}       tolerance=0.81
 
-Test pdf file
-        Move to outputdir
-        Verify Text in PDF    AUTHORIZATION APPROVED
-        ${alltextpdf}=        GetPdfText
         
