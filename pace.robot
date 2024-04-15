@@ -19,7 +19,7 @@ Test the home page
     VerifyText         Find your spirit animal
     ClickText          Our Story
     # Taking a 2 full screen screenshots and comparing them
-    ${second}=         LogScreenshot
+    ${second}=         LogScreenshot    fullpage=true
     ${third}=          LogScreenshot
     CompareImages      ${second}                   ${third}
 
